@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css" media="all">
+    table, td {
+      border: 1px solid black;
+    }
+  </style>
+  <title>Reminder Fibonachi</title>
+</head>
+<body>
+  <h1>Reminder Fibonachi</h1>
+  <div id="logo"></div>
+  <div id="slogan">
+    <p>Show only neccesary for repeating words</p>
+    <p>
+      five column in table:
+        rus, eng, audio, count repeat, done button</p>
+  </div> 
+  
+  <form action="" method="get" accept-charset="utf-8">
+    
+    <input type="text"
+      id="eng"
+      placeholder="english"
+    /> 
+    <button id="clearInputEng">
+      clear input</button>
+      
+    <input type="text"
+      id="rus"
+      placeholder="russian"
+    /> 
+    <button id="clearInputRus">
+      clear input</button>
+    
+    <input type="text"
+      id="img"
+      placeholder="image"
+    /> 
+    <button id="clearInputImg">
+      clear input</button>
+    <br />
+    
+    <input type="button"
+      value="add"
+      id="btn-add" 
+    >
+    <!-- <input type="button"
+      value="clear"
+      id="btn-clear" 
+    > -->
+  </form>
+  <form action="">
+    <label for="selectLang">
+      selectLang</label>
+    <select name="" id="selectLang">
+      <option value="eng">eng</option>
+      <option value="rus">rus</option>
+    </select>
+  </form>
+  
+  <div id="tableData"></div>
+  
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+  <script src="db.js" type="text/javascript" charset="utf-8"></script>
+  <script src="iodata.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
